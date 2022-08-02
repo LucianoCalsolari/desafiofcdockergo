@@ -1,0 +1,5 @@
+FROM scratch
+
+COPY ./main /go/bin/main
+
+CMD ["/go/bin/main","run","main.go"]
