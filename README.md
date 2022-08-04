@@ -1,3 +1,6 @@
+
+Adicionado o multistage building e retirando a copia do binario e buildando no 1 stage
+
 Comandos executados 
 docker build -f Dockerfile.builder  --tag hello:1.7 .
 docker run hello:1.7
@@ -12,3 +15,7 @@ docker images
 docker build -f Dockerfile.production --tag lucianocalsolari/codeeducation:1.0 .
 docker login
 docker push lucianocalsolari/codeeducation:1.0
+
+docker build -f Dockerfile.production --tag lucianocalsolari/codeeducation:2.0 .
+docker login
+docker push lucianocalsolari/codeeducation:2.0
